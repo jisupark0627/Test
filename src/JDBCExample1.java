@@ -4,13 +4,13 @@ class JDBCExample1 {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/malldb", 
-                                               "root", "wltn1242");
-            System.out.println("µ¥ÀÌÅÍº£ÀÌ½º¿¡ Á¢¼ÓÇß½À´Ï´Ù.");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/malldb",
+                    "root", "wltn1242");
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Íºï¿½ï¿½Ì½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.");
             conn.close();
         }
         catch (ClassNotFoundException cnfe) {
-            System.out.println("ÇØ´ç Å¬·¡½º¸¦ Ã£À» ¼ö ¾ø½À´Ï´Ù." + cnfe.getMessage());
+            System.out.println("ï¿½Ø´ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½." + cnfe.getMessage());
         }
         catch (SQLException se) {
             System.out.println(se.getMessage());
